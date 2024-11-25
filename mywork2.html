@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mywork2.css">
+    <title>Formulaire nouveau prothèse</title>
+    </head>
+    <body>
+        <header>
+        <h1>Formulaire nouveau prothèse</h1>
+        <div class ="logo">Cabinet<span>Plus</span></div>
+          </header>
+        
+        <section>
+    <h3>Ajouter une nouvelle prothèse</h3>
+    <form id="addProthesisForm" onsubmit="addProthesis(event)">
+        <div><label for="patientName">Nom du patient:</label>
+        <input type="text" id="patientName" required></div>
+
+      <div><label for="type">Type de prothèse:</label>
+          <input type="text" id="type" required></div>
+
+       <div><label for="orderDate">Date de commande:</label>
+           <input type="date" id="orderDate" required></div>
+
+      <div><label for="deliveryDate">Date prévue de livraison:</label>
+          <input type="date" id="deliveryDate" required></div>
+
+        <div><label for="prosthetist">Prothésiste:</label>
+            <input type="text" id="prosthetist" required> </div>
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </section>
+    </body>
+    
+
+</html>
